@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Bookshelf Apps</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Bookshelf App</h1>
+		</header>
+
+		<main>
+			<section class="container add-book">
+				<h2 class="title">Masukkan buku</h2>
+				<form id="inputBook">
+					<div class="input-wrapper" id="title">
+						<label for="inputBookTitle">Judul</label>
+						<input id="inputBookTitle" type="text" placeholder="Judul buku" />
+						<small class="error-display" id="errorTitle"
+							>Tidak Boleh Kosong</small
+						>
+					</div>
+					<div class="input-wrapper" id="author">
+						<label for="inputBookAuthor">Penulis</label>
+						<input
+							id="inputBookAuthor"
+							type="text"
+							placeholder="Penulis buku"
+						/>
+						<small class="error-display" id="errorAuthor"
+							>Tidak Boleh Kosong</small
+						>
+					</div>
+					<div class="input-wrapper" id="year">
+						<label for="inputBookYear">Tahun</label>
+						<input
+							id="inputBookYear"
+							type="number"
+							placeholder="Tahun terbit"
+						/>
+						<small class="error-display" id="errorYear"
+							>Tidak Boleh Kosong</small
+						>
+					</div>
+					<div class="input-wrapper f-row">
+						<label for="inputBookIsComplete">Selesai DiBaca</label>
+						<input class="check" type="checkbox" id="inputBookIsComplete" />
+					</div>
+					<button id="bookSubmit">Masukkan Buku</button>
+				</form>
+			</section>
+
+			<section class="container search-book" id="search">
+				<h2 class="title">Cari Buku</h2>
+				<form class="input-wrapper" id="searchBook">
+					<label for="searchBookTitle">Cari</label>
+					<input
+						type="text"
+						id="searchBookTitle"
+						placeholder="Judul, penulis, tahun terbit"
+					/>
+				</form>
+				<button id="searchSubmit">Cari</button>
+				<div class="book-list" id="searchResult" style="width: 100%"></div>
+			</section>
+
+			<div class="book-status-container">
+				<section class="container" id="book-shelf">
+					<h2 class="title">Belum selesai di baca</h2>
+					<div class="book-list" id="incomplete"></div>
+				</section>
+
+				<section class="container" id="bookShelfComplete">
+					<h2 class="title">Selesai di baca</h2>
+					<div class="book-list" id="completeBookList"></div>
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<p>&copy; Syahrizal Ardana 2022</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>

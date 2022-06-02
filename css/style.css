@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  margin: 2em 5%;
+}
+
+input:not(.check) {
+  all: unset;
+  border: 1px solid #000000;
+  padding: 0.8em;
+}
+
+button {
+  all: unset;
+  padding: 0.8em 1.8em;
+  color: #ffffff;
+  background: #d0a616;
+  cursor: pointer;
+  border: 1px solid #d0a616;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: #d0a616;
+  border: 1px solid #d0a616;
+  background: transparent;
+}
+
+header,
+footer {
+  color: #ffffff;
+  background: #043175;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  min-height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.container .title {
+  margin-bottom: 0.5em;
+}
+
+.container .book-list {
+  margin-top: 1em;
+}
+
+.container .book-item {
+  padding: 1em;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  margin-bottom: 1em;
+}
+
+.container .book-item button {
+  margin: 0.5em 0.5em 0 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .book-status-container {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.input-wrapper.f-row {
+  align-items: center;
+  flex-direction: row;
+}
+
+.input-wrapper.f-row .check {
+  margin-left: 1em;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+small {
+  color: red;
+}
+
+.error-display {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
